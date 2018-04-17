@@ -9,6 +9,7 @@ import Masternode from "../components/Masternode";
 import Wallet from "../components/Wallet";
 import Roadmap from "../components/Roadmap";
 import Exchanges from "../components/Exchanges";
+import Community from "../components/Community";
 
 const Wrapper = styled.div`
   display: flex;
@@ -31,5 +32,6 @@ export default () => (
     <Wallet />
     <Exchanges />
     <Roadmap />
+    <Community />
   </Wrapper>
 );
