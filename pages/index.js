@@ -4,6 +4,10 @@ import styled from 'styled-components'
 import Navigation from '../components/Navigation'
 import Header from '../components/Header'
 import Join from '../components/Join'
+import Specifications from '../components/Specifications'
+import Masternode from '../components/Masternode'
+import Wallet from '../components/Wallet'
+import Roadmap from '../components/Roadmap'
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,5 +25,9 @@ export default () => (
     <Navigation />
     <Header />
     <Join />
+    <Specifications />
+    <Masternode />
+    <Wallet />
+    <Roadmap />
   </Wrapper>
 )

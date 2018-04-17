@@ -5,24 +5,23 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, ${theme.gradient.start}, ${theme.gradient.end});
+  background: transparent;
   color: #fff;
   width: 100%;
-  border-width: 5px;
+  border-width: 1px;
   border-style: solid;
-  border-image: linear-gradient(to right, ${theme.gradient.start}, ${theme.gradient.end}) 1;
-  border: 0;
+  border-color: #fff;
   border-radius: 3px;
   padding: 15px;
   font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
+  transition: border-color .2s ease;
   &:focus,
   &:hover {
-    background: linear-gradient(to right, ${theme.gradient.end}, ${theme.gradient.end});
-    border-image: linear-gradient(to right, ${theme.gradient.end}, ${theme.gradient.end}) 1;
     cursor: pointer;
+    border-color: ${theme.main.main};
     outline: none;
   }
   &:disabled {
