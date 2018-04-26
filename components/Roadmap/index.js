@@ -101,14 +101,42 @@ export default () => (
       </Item.Left>
 
       <Item.Right>
-        <Item.Title>Core Team Assembly</Item.Title>
+        <Item.Title>Tribe Wallet 1.0 Release</Item.Title>
+        <Item.Description>Excluded premine + bug fixes</Item.Description>
+      </Item.Right>
+    </Item>
+    <Item>
+      <Item.Left>
+        <Item.Icon>
+          <FontAwesomeIcon icon={faCheck} fixedWidth size="lg" />
+        </Item.Icon>
+        <Item.Road />
+      </Item.Left>
+
+      <Item.Right>
+        <Item.Title>Tribe Website and Social Media Launch</Item.Title>
+        <Item.Description>Tribe Faucet launch</Item.Description>
+      </Item.Right>
+    </Item>
+
+    <Item>
+      <Item.Left>
+        <Item.Dot />
+        <Item.Road />
+      </Item.Left>
+
+      <Item.Right>
+        <Item.Title>New Reward System Block 140900</Item.Title>
         <Item.Description>
-          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-          ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum{" "}
+          - 10% adjustment each month until 50/50% reward between miners and
+          masternodes
+          <br />
+          - New BlockReward System scaling with Network Hashrate min 3 max 40
+          Reward (more Hashrate == more BlockReward)
         </Item.Description>
       </Item.Right>
     </Item>
+
     <Item>
       <Item.Left>
         <Item.Dot />
@@ -116,8 +144,7 @@ export default () => (
       </Item.Left>
 
       <Item.Right>
-        <Item.Title>Tribe MainNet Launch</Item.Title>
-        <Item.Description>lorem ipsum ...</Item.Description>
+        <Item.Title>New Exchange listing</Item.Title>
       </Item.Right>
     </Item>
 
@@ -128,8 +155,7 @@ export default () => (
       </Item.Left>
 
       <Item.Right>
-        <Item.Title>Windows & Mac Wallet Release</Item.Title>
-        <Item.Description>lorem ipsum ...</Item.Description>
+        <Item.Title>Community Voting for further Development</Item.Title>
       </Item.Right>
     </Item>
 
@@ -140,8 +166,7 @@ export default () => (
       </Item.Left>
 
       <Item.Right>
-        <Item.Title>Exchange Listings</Item.Title>
-        <Item.Description>lorem ipsum ...</Item.Description>
+        <Item.Title>Escrow Service Website</Item.Title>
       </Item.Right>
     </Item>
 
@@ -152,8 +177,7 @@ export default () => (
       </Item.Left>
 
       <Item.Right>
-        <Item.Title>Mobile Wallet (Android/iOS)</Item.Title>
-        <Item.Description>lorem ipsum ...</Item.Description>
+        <Item.Title>Android Wallet</Item.Title>
       </Item.Right>
     </Item>
 
@@ -164,8 +188,7 @@ export default () => (
       </Item.Left>
 
       <Item.Right>
-        <Item.Title>Community Voting For Further Development</Item.Title>
-        <Item.Description>lorem ipsum ...</Item.Description>
+        <Item.Title>Merchant Support</Item.Title>
       </Item.Right>
     </Item>
   </Wrapper>

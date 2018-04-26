@@ -7,6 +7,8 @@ import faTwitter from "@fortawesome/fontawesome-free-brands/faTwitter";
 import faDiscord from "@fortawesome/fontawesome-free-brands/faDiscord";
 import faGithub from "@fortawesome/fontawesome-free-brands/faGithub";
 import faBitcoin from "@fortawesome/fontawesome-free-brands/faBitcoin";
+import faTelegram from "@fortawesome/fontawesome-free-brands/faTelegram";
+import faFacebook from "@fortawesome/fontawesome-free-brands/faFacebook";
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,7 +27,8 @@ const Description = styled.p`
   text-align: center;
 `;
 
-const Item = styled.div`
+const Item = styled.a`
+  color: ${theme.main.main};
   margin: 0 45px;
 `;
 
@@ -54,28 +57,48 @@ export default () => (
       updates.
     </Description>
     <Item.Container>
-      <Item>
+      <Item
+        href="https://bitcointalk.org/index.php?topic=3329065.0"
+        target="_blank"
+      >
         <Item.Icon>
           <FontAwesomeIcon icon={faBitcoin} fixedWidth size="2x" />
         </Item.Icon>
         <Item.Description>Bitcointalk</Item.Description>
       </Item>
 
-      <Item>
+      <Item
+        href="https://www.facebook.com/Tribe-crypto-189936728292975/"
+        target="_blank"
+      >
+        <Item.Icon>
+          <FontAwesomeIcon icon={faFacebook} fixedWidth size="2x" />
+        </Item.Icon>
+        <Item.Description>Facebook</Item.Description>
+      </Item>
+
+      <Item href="https://twitter.com/Tribe_Crypto" target="_blank">
         <Item.Icon>
           <FontAwesomeIcon icon={faTwitter} fixedWidth size="2x" />
         </Item.Icon>
         <Item.Description>Twitter</Item.Description>
       </Item>
 
-      <Item>
+      <Item href="https://discord.gg/Vwamhjt" target="_blank">
         <Item.Icon>
           <FontAwesomeIcon icon={faDiscord} fixedWidth size="2x" />
         </Item.Icon>
         <Item.Description>Discord</Item.Description>
       </Item>
 
-      <Item>
+      <Item href="https://t.me/joinchat/IJv8QUT6o3_KOHJRyiZJNQ" target="_blank">
+        <Item.Icon>
+          <FontAwesomeIcon icon={faTelegram} fixedWidth size="2x" />
+        </Item.Icon>
+        <Item.Description>Telegram</Item.Description>
+      </Item>
+
+      <Item href="https://github.com/TribeCrypto/tribe" target="_blank">
         <Item.Icon>
           <FontAwesomeIcon icon={faGithub} fixedWidth size="2x" />
         </Item.Icon>

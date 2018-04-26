@@ -1,5 +1,6 @@
-import styled from 'styled-components'
-import { theme } from '../lib/theme'
+import styled from "styled-components";
+import { theme } from "../lib/theme";
+import Color from "color";
 
 const Button = styled.button`
   display: flex;
@@ -17,7 +18,7 @@ const Button = styled.button`
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  transition: border-color .2s ease;
+  transition: border-color 0.2s ease;
   &:focus,
   &:hover {
     cursor: pointer;
@@ -25,9 +26,15 @@ const Button = styled.button`
     outline: none;
   }
   &:disabled {
+    color: ${Color("#fff")
+      .alpha(0.3)
+      .string()};
+    border-color: ${Color("#fff")
+      .alpha(0.3)
+      .string()};
     cursor: not-allowed;
     background: transparent;
   }
-`
+`;
 
-export default Button
+export default Button;
