@@ -44,7 +44,7 @@ export default () => (
     <SectionHeader>START YOUR TRIBE MASTENODE</SectionHeader>
     <Description>
       Help sustain the TRIBE Netwok and earn passive-income by running a TRIBE
-      masternode. All masternodes get 20% of every block reward. Masternode
+      masternode. All masternodes get 30% of every block reward. Masternode
       collateral is a 1000 Tribe coins.
     </Description>
     <CTA>
