@@ -1,0 +1,40 @@
+image: docker:latest
+cache:
+  paths:
+  - node_modules/
+before_script:
+  - mkdir -p ~/.ssh
+stages:
+  - build
+  - production
+variables:
+  CONTAINER_IMAGE: ${CI_REGISTRY}/${CI_PROJECT_PATH}:${CI_BUILD_REF_NAME}_${CI_BUILD_REF}
+  CONTAINER_IMAGE_LATEST: ${CI_REGISTRY}/${CI_PROJECT_PATH}:latest
+build:
+  image: hafenio/dind-node-runner:latest
+  stage: build
+  script:
+    - npm install
+    - npm run build
+    - docker login -u gitlab-ci-token -p ${CI_BUILD_TOKEN} ${CI_REGISTRY}
+    - docker build -t ${CONTAINER_IMAGE} .
+    - docker tag ${CONTAINER_IMAGE} ${CONTAINER_IMAGE_LATEST}
+    - docker push ${CONTAINER_IMAGE}
+    - docker push ${CONTAINER_IMAGE_LATEST}
+  only:
+  - master
+production:
+  image: hafenio/dind-node-runner:latest
+  stage: production
+  script:
+    - echo "$SSH_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/id_rsa
+    - ssh-keyscan -H 'hashdot.co' >> ~/.ssh/known_hosts
+    - ssh deploy@hashdot.co kubectl set image deployments/tribecrypto tribecrypto=${CI_REGISTRY}/${CI_PROJECT_PATH}:${CI_BUILD_REF_NAME}_${CI_BUILD_REF}
+  environment:
+    name: production
+    url: https://tribe-crypto.com
+  only:
+  - master
