@@ -37,7 +37,7 @@ const Line = styled.div`
   display: flex;
   justify-content: space-around;
   width: calc(100% - 20%);
-  margin: 50px 10%;
+  margin: 0px 10%;
   flex-wrap: wrap;
 `;
 Line.Item = styled.a`
@@ -81,6 +81,7 @@ ButtonGhost.Icon = styled(FontAwesomeIcon)`
 export default () => (
   <Wrapper>
     <SectionHeader>DOWNLOAD WALLET</SectionHeader>
+    <br /> <br />
     <Line>
       <Line.Item
         href="https://github.com/TribeCrypto/tribe/releases/download/v1.0.0/tribe-qt-v1.0.0.1-win64.zip"
@@ -105,6 +106,8 @@ export default () => (
           <ButtonGhost.Icon icon={faLinux} fixedWidth size="lg" /> 64-BIT LINUX
         </ButtonGhost>
       </Line.Item>
+    </Line>
+    <Line>
       <Line.Item>
         <ButtonGhost disabled>
           <ButtonGhost.Icon icon={faLinux} fixedWidth size="lg" /> 32-BIT Linux
