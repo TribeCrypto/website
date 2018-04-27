@@ -32,6 +32,11 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400"
             rel="stylesheet"
           />
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="https://res.cloudinary.com/hafen/image/upload/f_auto/v1524858184/logo_hmhez1.ico"
+          />
           {this.props.styleTags}
         </Head>
         <body>
