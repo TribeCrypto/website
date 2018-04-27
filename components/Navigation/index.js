@@ -58,15 +58,6 @@ export default () => (
     </Logo.Container>
     <Navigation>
       <Navigation.Item
-        to="join"
-        spy={true}
-        smooth={true}
-        duration={500}
-        offset={-80}
-      >
-        JOIN THE TRIBE
-      </Navigation.Item>
-      <Navigation.Item
         to="specification"
         spy={true}
         smooth={true}
