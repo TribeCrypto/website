@@ -1,5 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 
 import Navigation from "../components/Navigation";
 import Header from "../components/Header";
@@ -26,14 +34,30 @@ const Title = styled.h1`
 export default () => (
   <Wrapper>
     <Navigation />
-    <Header />
-    <Join />
-    <Specifications />
-    <Masternode />
-    <Wallet />
-    <Exchanges />
-    <Roadmap />
-    <Community />
+    <Element name="header" className="element">
+      <Header />
+    </Element>
+    <Element name="join" className="element">
+      <Join />
+    </Element>
+    <Element name="specification" className="element">
+      <Specifications />
+    </Element>
+    <Element name="masternode" className="element">
+      <Masternode />
+    </Element>
+    <Element name="wallet" className="element">
+      <Wallet />
+    </Element>
+    <Element name="exchanges" className="element">
+      <Exchanges />
+    </Element>
+    <Element name="roadmap" className="element">
+      <Roadmap />
+    </Element>
+    <Element name="community" className="element">
+      <Community />
+    </Element>
     <Footer />
   </Wrapper>
 );
