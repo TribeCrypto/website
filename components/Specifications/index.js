@@ -64,6 +64,7 @@ Line.Description = styled.p`
   text-align: center;
   margin: 0;
   font-weight: 300;
+  line-height: 27px;
 `;
 
 Button.Container = styled.div`
@@ -97,6 +98,8 @@ export default () => (
           X11 hashing algorithm: 11 rounds of scientific hashing functions
           (blake, bmw, groestl, jh, keccak, skein, luffa, cubehash, shavite,
           simd, echo)
+          <br />
+          RPC/P2P Port: 9998/9399
         </Line.Description>
       </Line.Item>
       <Line.Item>
@@ -111,7 +114,11 @@ export default () => (
         <Line.Description>
           Block generation: 2.5 minutes
           <br />
+          Min/Max Reward: 3/40
+          <br />
           Masternode: 30% - Miner: 70%
+          <br />
+          Block Reward Scaling
         </Line.Description>
       </Line.Item>
       <Line.Item>
@@ -124,7 +131,11 @@ export default () => (
         </Line.Icon.Wrapper>
         <Line.Title>Max Supply</Line.Title>
         <Line.Description>
-          Est. ~ 18.9M Coins
+          Current: ~ 2.2M Coins
+          <br />
+          Estimated: ~ 18.9M Coins
+          <br />
+          Excluded Premine: ~ 1.1M Coins
           <br />
           Difficulty retargets using Dark Gravity Wave
         </Line.Description>
@@ -141,14 +152,11 @@ export default () => (
         <Line.Description>
           Transaction confirmations: 6
           <br />
-          Maturing 101 confirmations
+          Maturing confirmations: 101
           <br />
           InstantSend confirmations: ~ 5 seconds
         </Line.Description>
       </Line.Item>
     </Line>
-    <Button.Container>
-      <Button>VIEW FULL SPECS ON GITHUB</Button>
-    </Button.Container>
   </Wrapper>
 );
