@@ -4,6 +4,9 @@ import { theme } from "../../lib/theme";
 import ButtonGhost from "../ButtonGhost";
 import Logo from "../Logo";
 import SectionHeader from "../SectionHeader";
+import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import faTerminal from "@fortawesome/fontawesome-free-solid/faTerminal";
+import faFileAlt from "@fortawesome/fontawesome-free-solid/faFileAlt";
 
 const Wrapper = styled.div`
   display: flex;
@@ -36,12 +39,17 @@ const CTA = styled.div`
 `;
 
 CTA.Wrapper = styled.div`
-  width: 350px;
+  width: 400px;
+  margin: 0 15px;
+`;
+
+const Icon = styled(FontAwesomeIcon)`
+  margin: 0 10px 0 0;
 `;
 
 export default () => (
   <Wrapper>
-    <SectionHeader>START YOUR TRIBE MASTENODE</SectionHeader>
+    <SectionHeader>START YOUR TRIBE MASTERNODE</SectionHeader>
     <Description>
       Help sustain the TRIBE Netwok and earn passive-income by running a TRIBE
       masternode. All masternodes get 30% of every block reward. Masternode
@@ -53,7 +61,18 @@ export default () => (
           href="https://steemit.com/masternode/@m33lucky/setting-up-the-tribe-masternode"
           target="_blank"
         >
-          <ButtonGhost>TRIBE MASTENODE SETUP GUIDE</ButtonGhost>
+          <ButtonGhost dark>
+            <Icon icon={faFileAlt} fixedWidth size="lg" />
+            MASTERNODE SETUP GUIDE
+          </ButtonGhost>
+        </a>
+      </CTA.Wrapper>
+      <CTA.Wrapper>
+        <a href="https://github.com/Momijiscrypto/Tribe-mn" target="_blank">
+          <ButtonGhost dark>
+            <Icon icon={faTerminal} fixedWidth size="lg" />
+            MASTERNODE SETUP SCRIPT
+          </ButtonGhost>
         </a>
       </CTA.Wrapper>
     </CTA>

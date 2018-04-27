@@ -18,11 +18,12 @@ const Button = styled.button`
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
   &:focus,
   &:hover {
     cursor: pointer;
-    border-color: ${theme.main.main};
+    border-color: ${props => (props.dark ? "#333" : theme.main.main)};
+    color: ${props => (props.dark ? "#333" : theme.main.main)};
     outline: none;
   }
   &:disabled {
