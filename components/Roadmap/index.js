@@ -102,7 +102,7 @@ export default () => (
 
       <Item.Right>
         <Item.Title>Tribe Wallet 1.0 Release</Item.Title>
-        <Item.Description>Excluded premine + bug fixes</Item.Description>
+        <Item.Description>- Excluded premine + bug fixes</Item.Description>
       </Item.Right>
     </Item>
     <Item>
@@ -115,13 +115,15 @@ export default () => (
 
       <Item.Right>
         <Item.Title>Tribe Website and Social Media Launch</Item.Title>
-        <Item.Description>Tribe Faucet launch</Item.Description>
+        <Item.Description>- Tribe Faucet launch</Item.Description>
       </Item.Right>
     </Item>
 
     <Item>
       <Item.Left>
-        <Item.Dot />
+        <Item.Icon>
+          <FontAwesomeIcon icon={faCheck} fixedWidth size="lg" />
+        </Item.Icon>
         <Item.Road />
       </Item.Left>
 
