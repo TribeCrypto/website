@@ -43,6 +43,7 @@ Line.Item = styled.div`
   margin: 0 10px;
 `;
 Line.Icon = styled.div`
+  margin: 15px 0 0 0;
   padding: 0 30px;
   fill: #fff;
 `;
