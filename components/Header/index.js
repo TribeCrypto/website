@@ -45,7 +45,7 @@ export default () => (
   <Wrapper>
     <Tribe>TRIBE</Tribe>
     <Subline>
-      <Bracket>[</Bracket> COMMUNITY BUILT PRIVACY CRYPTOR FOR MASS ADOPTION{" "}
+      <Bracket>[</Bracket> COMMUNITY BUILT PRIVACY CRYPTO FOR MASS ADOPTION{" "}
       <Bracket>]</Bracket>
     </Subline>
     <Button.Container>
