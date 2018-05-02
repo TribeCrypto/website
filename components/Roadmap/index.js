@@ -173,6 +173,8 @@ export default () => (
           - Fully automated escrow service
           <br />
           - Pay fee in Tribe and receive a discount
+          <br />
+          - Tribe as trading pair
         </Item.Description>
       </Item.Right>
     </Item>
@@ -189,8 +191,6 @@ export default () => (
           - Check your Masternode Status in your Android Wallet
           <br />
           - Pay directly with your mobile phone in local stores
-          <br />
-          - Tribe as trading pair
         </Item.Description>
       </Item.Right>
     </Item>
