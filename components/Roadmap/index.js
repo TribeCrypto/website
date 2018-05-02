@@ -189,6 +189,8 @@ export default () => (
           - Check your Masternode Status in your Android Wallet
           <br />
           - Pay directly with your mobile phone in local stores
+          <br />
+          - Tribe as trading pair
         </Item.Description>
       </Item.Right>
     </Item>
