@@ -134,7 +134,7 @@ export default () => (
           masternodes
           <br />
           - New BlockReward System scaling with Network Hashrate min 3 max 40
-          Reward (more Hashrate == more BlockReward)
+          Reward (more Hashrate = more BlockReward)
         </Item.Description>
       </Item.Right>
     </Item>
@@ -169,6 +169,11 @@ export default () => (
 
       <Item.Right>
         <Item.Title>Escrow Service Website</Item.Title>
+        <Item.Description>
+          - Fully automated escrow service
+          <br />
+          - Pay fee in Tribe and receive a discount
+        </Item.Description>
       </Item.Right>
     </Item>
 
@@ -180,6 +185,11 @@ export default () => (
 
       <Item.Right>
         <Item.Title>Android Wallet</Item.Title>
+        <Item.Description>
+          - Check your Masternode Status in your Android Wallet
+          <br />
+          - Pay directly with your mobile phone in local stores
+        </Item.Description>
       </Item.Right>
     </Item>
 
