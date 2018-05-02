@@ -51,7 +51,7 @@ export default () => (
     </Description>
     <Container>
       <Container.Item
-        href="https://novaexchange.com/market/BTC_DAS/"
+        href="https://novaexchange.com/market/BTC_TRIBE/"
         target="_blank"
       >
         <img
