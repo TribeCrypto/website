@@ -95,9 +95,7 @@ export default () => (
         </Line.Icon.Wrapper>
         <Line.Title>CPU/GPU/ASIC Mining</Line.Title>
         <Line.Description>
-          X11 hashing algorithm: 11 rounds of scientific hashing functions
-          (blake, bmw, groestl, jh, keccak, skein, luffa, cubehash, shavite,
-          simd, echo)
+          X11 hashing algorithm: Difficulty retargets using Dark Gravity Wave
           <br />
           RPC/P2P Port: 9998/9399
         </Line.Description>
@@ -136,8 +134,6 @@ export default () => (
           Estimated: ~ 18.9M Coins
           <br />
           Excluded Premine: ~ 1.1M Coins
-          <br />
-          Difficulty retargets using Dark Gravity Wave
         </Line.Description>
       </Line.Item>
       <Line.Item>
