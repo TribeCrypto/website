@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   background: ${theme.background.main};
   width: calc(100% - 40%);
   padding: 0 20%;
+  z-index: 1000;
 `;
 
 Logo.Container = styled.div`
