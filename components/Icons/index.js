@@ -11,6 +11,7 @@ import gears from "./gears";
 import wallet from "./wallet";
 import mining from "./mining";
 import logo from "./logo";
+import header from "./header";
 
 const Icons = styled.div``;
 
@@ -25,5 +26,6 @@ Icons.Gears = gears;
 Icons.Wallet = wallet;
 Icons.Mining = mining;
 Icons.Logo = logo;
+Icons.Header = header;
 
 export default Icons;

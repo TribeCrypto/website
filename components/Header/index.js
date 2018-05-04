@@ -3,8 +3,10 @@ import styled from "styled-components";
 import { theme } from "../../lib/theme";
 import { Link } from "react-scroll";
 import Button from "../Button";
+import Icons from "../Icons";
 
 const Wrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +14,13 @@ const Wrapper = styled.div`
   margin: 80px 0 0 0;
   background: ${theme.background.main};
   width: 100%;
+`;
+
+Wrapper.Background = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  bottom: 0;
 `;
 
 const Tribe = styled.p`
@@ -43,6 +52,9 @@ Button.Container = styled.div`
 
 export default () => (
   <Wrapper>
+    <Wrapper.Background>
+      <Icons.Header />
+    </Wrapper.Background>
     <Tribe>TRIBE</Tribe>
     <Subline>
       <Bracket>[</Bracket> COMMUNITY BUILT PRIVACY CRYPTO FOR MASS ADOPTION{" "}
