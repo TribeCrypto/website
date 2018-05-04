@@ -24,6 +24,7 @@ Wrapper.Background = styled.div`
 `;
 
 const Tribe = styled.p`
+  z-index: 20;
   font-size: 4rem;
   color: #fff;
   font-weight: 100;
@@ -32,6 +33,7 @@ const Tribe = styled.p`
 `;
 
 const Subline = styled.p`
+  z-index: 20;
   display: flex;
   align-items: center;
   font-size: 1.4rem;
@@ -42,10 +44,12 @@ const Subline = styled.p`
 `;
 
 const Bracket = styled.span`
+  z-index: 20;
   font-size: 2.2rem;
 `;
 
 Button.Container = styled.div`
+  z-index: 20;
   width: 220px;
   margin: 50px 0 0 0;
 `;
