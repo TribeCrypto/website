@@ -49,7 +49,7 @@ const Bracket = styled.span`
 `;
 
 Button.Container = styled.div`
-  z-index: 20;
+  z-index: 200;
   width: 220px;
   margin: 50px 0 0 0;
 `;
