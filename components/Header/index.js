@@ -48,7 +48,7 @@ const Bracket = styled.span`
   font-size: 2.2rem;
 `;
 
-Button.Container = styled.div`
+const ButtonContainer = styled.div`
   z-index: 200;
   width: 220px;
   margin: 50px 0 0 0;
@@ -64,10 +64,10 @@ export default () => (
       <Bracket>[</Bracket> COMMUNITY BUILT PRIVACY CRYPTO FOR MASS ADOPTION{" "}
       <Bracket>]</Bracket>
     </Subline>
-    <Button.Container>
+    <ButtonContainer>
       <Link to="wallet" spy={true} smooth={true} duration={500} offset={-80}>
         <Button>GET TRIBE WALLET</Button>
       </Link>
-    </Button.Container>
+    </ButtonContainer>
   </Wrapper>
 );
